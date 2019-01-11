@@ -96,6 +96,10 @@ nova-compute:
     - path: /etc/nova/rootwrap.conf
       group: nova
       mode: '640'
+    - path: /etc/nova/*
+      group: nova
+      mode: '640'
+
 ## TODO - add support for optional files
 # openstack-dashboard:
 #   files:
